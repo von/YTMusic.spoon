@@ -1,0 +1,604 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+      {
+        "doc" : "Post the event hs.eventtap.event to the YTMusic application.\n\nParameters:\n* event: hs.eventtap.event to post\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* event: hs.eventtap.event to post",
+          ""
+        ],
+        "stripped_doc" : [
+          "Post the event hs.eventtap.event to the YTMusic application.",
+          ""
+        ],
+        "def" : "YTMusic:postEvent",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:postEvent",
+        "type" : "Function",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "postEvent",
+        "desc" : "Post the event hs.eventtap.event to the YTMusic application."
+      }
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "Works by sending key events to the app, so if the user interface changes,",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "Method" : [
+      {
+        "doc" : "Enable or disable debugging\n\nParameters:\n * enable - Boolean indicating whether debugging should be on\n\nReturns:\n * Nothing",
+        "parameters" : [
+          " * enable - Boolean indicating whether debugging should be on",
+          ""
+        ],
+        "stripped_doc" : [
+          "Enable or disable debugging",
+          ""
+        ],
+        "def" : "YTMusic:debug(enable)",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:debug(enable)",
+        "type" : "Method",
+        "returns" : [
+          " * Nothing"
+        ],
+        "name" : "debug",
+        "desc" : "Enable or disable debugging"
+      },
+      {
+        "doc" : "Initializes a YTMusic\nWhen a user calls hs.loadSpoon(), Hammerspoon will load and execute init.lua\nfrom the relevant s.\nDo generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.\nin the main scope of your init.lua. Instead, it should simply prepare an object\nwith methods to be used later, then return the object.\n\nParameters:\n * None\n\nReturns:\n * YTMusic object",
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Initializes a YTMusic",
+          "When a user calls hs.loadSpoon(), Hammerspoon will load and execute init.lua",
+          "from the relevant s.",
+          "Do generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.",
+          "in the main scope of your init.lua. Instead, it should simply prepare an object",
+          "with methods to be used later, then return the object.",
+          ""
+        ],
+        "def" : "YTMusic:init()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:init()",
+        "type" : "Method",
+        "returns" : [
+          " * YTMusic object"
+        ],
+        "name" : "init",
+        "desc" : "Initializes a YTMusic"
+      },
+      {
+        "doc" : "The method accepts a single parameter, which is a table. The keys of the table\nare strings that describe the action performed, and the values of the table are\ntables containing modifiers and keynames\/keycodes. E.g.\n  {\n    next = {{\"cmd\", \"alt\"}, \"right\"},\n    play = {{\"cmd\", \"alt\"}, \"space\"},\n    previous = {{\"cmd\", \"alt\"}, \"left\"},\n    skipAhead = {{\"cmd\", \"alt\", \"shift\"}, \"right\"},\n    skipBack = {{\"cmd\", \"alt\", \"shift\"}, \"left\"},\n    mute = {{\"cmd\", \"alt\"}, \"m\"},\n    volumeUp = {{\"cmd\", \"alt\"}, \"+\"},\n    volumeDown = {{\"cmd\", \"alt\"}, \"=\"},\n   }\n\n\nParameters:\n * table - Table of action to key mappings\n\nReturns:\n * YTMusic object",
+        "parameters" : [
+          " * table - Table of action to key mappings",
+          ""
+        ],
+        "stripped_doc" : [
+          "The method accepts a single parameter, which is a table. The keys of the table",
+          "are strings that describe the action performed, and the values of the table are",
+          "tables containing modifiers and keynames\/keycodes. E.g.",
+          "  {",
+          "    next = {{\"cmd\", \"alt\"}, \"right\"},",
+          "    play = {{\"cmd\", \"alt\"}, \"space\"},",
+          "    previous = {{\"cmd\", \"alt\"}, \"left\"},",
+          "    skipAhead = {{\"cmd\", \"alt\", \"shift\"}, \"right\"},",
+          "    skipBack = {{\"cmd\", \"alt\", \"shift\"}, \"left\"},",
+          "    mute = {{\"cmd\", \"alt\"}, \"m\"},",
+          "    volumeUp = {{\"cmd\", \"alt\"}, \"+\"},",
+          "    volumeDown = {{\"cmd\", \"alt\"}, \"=\"},",
+          "   }",
+          "",
+          ""
+        ],
+        "def" : "YTMusic:bindHotKeys(table)",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:bindHotKeys(table)",
+        "type" : "Method",
+        "returns" : [
+          " * YTMusic object"
+        ],
+        "name" : "bindHotKeys",
+        "desc" : "The method accepts a single parameter, which is a table. The keys of the table"
+      },
+      {
+        "doc" : "Play or pause.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Play or pause.",
+          ""
+        ],
+        "def" : "YTMusic:playPause()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:playPause()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "playPause",
+        "desc" : "Play or pause."
+      },
+      {
+        "doc" : "Advance to next track.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Advance to next track.",
+          ""
+        ],
+        "def" : "YTMusic:nextTrack()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:nextTrack()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "nextTrack",
+        "desc" : "Advance to next track."
+      },
+      {
+        "doc" : "Rewind to begining of current track or previous track if already at begining of\ncurrent track.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Rewind to begining of current track or previous track if already at begining of",
+          "current track.",
+          ""
+        ],
+        "def" : "YTMusic:previousTrack()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:previousTrack()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "previousTrack",
+        "desc" : "Rewind to begining of current track or previous track if already at begining of"
+      },
+      {
+        "doc" : "Skip ahead 10 seconds.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Skip ahead 10 seconds.",
+          ""
+        ],
+        "def" : "YTMusic:skipAhead()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:skipAhead()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "skipAhead",
+        "desc" : "Skip ahead 10 seconds."
+      },
+      {
+        "doc" : "Skip back 10 seconds.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Skip back 10 seconds.",
+          ""
+        ],
+        "def" : "YTMusic:skipBack()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:skipBack()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "skipBack",
+        "desc" : "Skip back 10 seconds."
+      },
+      {
+        "doc" : "Toggle the mute state of the application.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Toggle the mute state of the application.",
+          ""
+        ],
+        "def" : "YTMusic:toggleMute()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:toggleMute()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "toggleMute",
+        "desc" : "Toggle the mute state of the application."
+      },
+      {
+        "doc" : "Decrease the volume in the app.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Decrease the volume in the app.",
+          ""
+        ],
+        "def" : "YTMusic:volumeDown()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:volumeDown()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "volumeDown",
+        "desc" : "Decrease the volume in the app."
+      },
+      {
+        "doc" : "Increase the volume in the app.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Increase the volume in the app.",
+          ""
+        ],
+        "def" : "YTMusic:volumeUp()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:volumeUp()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "volumeUp",
+        "desc" : "Increase the volume in the app."
+      }
+    ],
+    "Command" : [
+
+    ],
+    "doc" : "Control the YTMusic App (https:\/\/ytmusic.app\/)\nWorks by sending key events to the app, so if the user interface changes,\nthat will break this app.\n\nTo see all the keyboard shortcuts that YTMusic.app has, use '?' in the app.",
+    "items" : [
+      {
+        "doc" : "Post the event hs.eventtap.event to the YTMusic application.\n\nParameters:\n* event: hs.eventtap.event to post\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* event: hs.eventtap.event to post",
+          ""
+        ],
+        "stripped_doc" : [
+          "Post the event hs.eventtap.event to the YTMusic application.",
+          ""
+        ],
+        "def" : "YTMusic:postEvent",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:postEvent",
+        "type" : "Function",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "postEvent",
+        "desc" : "Post the event hs.eventtap.event to the YTMusic application."
+      },
+      {
+        "doc" : "The method accepts a single parameter, which is a table. The keys of the table\nare strings that describe the action performed, and the values of the table are\ntables containing modifiers and keynames\/keycodes. E.g.\n  {\n    next = {{\"cmd\", \"alt\"}, \"right\"},\n    play = {{\"cmd\", \"alt\"}, \"space\"},\n    previous = {{\"cmd\", \"alt\"}, \"left\"},\n    skipAhead = {{\"cmd\", \"alt\", \"shift\"}, \"right\"},\n    skipBack = {{\"cmd\", \"alt\", \"shift\"}, \"left\"},\n    mute = {{\"cmd\", \"alt\"}, \"m\"},\n    volumeUp = {{\"cmd\", \"alt\"}, \"+\"},\n    volumeDown = {{\"cmd\", \"alt\"}, \"=\"},\n   }\n\n\nParameters:\n * table - Table of action to key mappings\n\nReturns:\n * YTMusic object",
+        "parameters" : [
+          " * table - Table of action to key mappings",
+          ""
+        ],
+        "stripped_doc" : [
+          "The method accepts a single parameter, which is a table. The keys of the table",
+          "are strings that describe the action performed, and the values of the table are",
+          "tables containing modifiers and keynames\/keycodes. E.g.",
+          "  {",
+          "    next = {{\"cmd\", \"alt\"}, \"right\"},",
+          "    play = {{\"cmd\", \"alt\"}, \"space\"},",
+          "    previous = {{\"cmd\", \"alt\"}, \"left\"},",
+          "    skipAhead = {{\"cmd\", \"alt\", \"shift\"}, \"right\"},",
+          "    skipBack = {{\"cmd\", \"alt\", \"shift\"}, \"left\"},",
+          "    mute = {{\"cmd\", \"alt\"}, \"m\"},",
+          "    volumeUp = {{\"cmd\", \"alt\"}, \"+\"},",
+          "    volumeDown = {{\"cmd\", \"alt\"}, \"=\"},",
+          "   }",
+          "",
+          ""
+        ],
+        "def" : "YTMusic:bindHotKeys(table)",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:bindHotKeys(table)",
+        "type" : "Method",
+        "returns" : [
+          " * YTMusic object"
+        ],
+        "name" : "bindHotKeys",
+        "desc" : "The method accepts a single parameter, which is a table. The keys of the table"
+      },
+      {
+        "doc" : "Enable or disable debugging\n\nParameters:\n * enable - Boolean indicating whether debugging should be on\n\nReturns:\n * Nothing",
+        "parameters" : [
+          " * enable - Boolean indicating whether debugging should be on",
+          ""
+        ],
+        "stripped_doc" : [
+          "Enable or disable debugging",
+          ""
+        ],
+        "def" : "YTMusic:debug(enable)",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:debug(enable)",
+        "type" : "Method",
+        "returns" : [
+          " * Nothing"
+        ],
+        "name" : "debug",
+        "desc" : "Enable or disable debugging"
+      },
+      {
+        "doc" : "Initializes a YTMusic\nWhen a user calls hs.loadSpoon(), Hammerspoon will load and execute init.lua\nfrom the relevant s.\nDo generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.\nin the main scope of your init.lua. Instead, it should simply prepare an object\nwith methods to be used later, then return the object.\n\nParameters:\n * None\n\nReturns:\n * YTMusic object",
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Initializes a YTMusic",
+          "When a user calls hs.loadSpoon(), Hammerspoon will load and execute init.lua",
+          "from the relevant s.",
+          "Do generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.",
+          "in the main scope of your init.lua. Instead, it should simply prepare an object",
+          "with methods to be used later, then return the object.",
+          ""
+        ],
+        "def" : "YTMusic:init()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:init()",
+        "type" : "Method",
+        "returns" : [
+          " * YTMusic object"
+        ],
+        "name" : "init",
+        "desc" : "Initializes a YTMusic"
+      },
+      {
+        "doc" : "Advance to next track.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Advance to next track.",
+          ""
+        ],
+        "def" : "YTMusic:nextTrack()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:nextTrack()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "nextTrack",
+        "desc" : "Advance to next track."
+      },
+      {
+        "doc" : "Play or pause.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Play or pause.",
+          ""
+        ],
+        "def" : "YTMusic:playPause()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:playPause()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "playPause",
+        "desc" : "Play or pause."
+      },
+      {
+        "doc" : "Rewind to begining of current track or previous track if already at begining of\ncurrent track.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Rewind to begining of current track or previous track if already at begining of",
+          "current track.",
+          ""
+        ],
+        "def" : "YTMusic:previousTrack()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:previousTrack()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "previousTrack",
+        "desc" : "Rewind to begining of current track or previous track if already at begining of"
+      },
+      {
+        "doc" : "Skip ahead 10 seconds.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Skip ahead 10 seconds.",
+          ""
+        ],
+        "def" : "YTMusic:skipAhead()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:skipAhead()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "skipAhead",
+        "desc" : "Skip ahead 10 seconds."
+      },
+      {
+        "doc" : "Skip back 10 seconds.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Skip back 10 seconds.",
+          ""
+        ],
+        "def" : "YTMusic:skipBack()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:skipBack()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "skipBack",
+        "desc" : "Skip back 10 seconds."
+      },
+      {
+        "doc" : "Toggle the mute state of the application.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Toggle the mute state of the application.",
+          ""
+        ],
+        "def" : "YTMusic:toggleMute()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:toggleMute()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "toggleMute",
+        "desc" : "Toggle the mute state of the application."
+      },
+      {
+        "doc" : "Decrease the volume in the app.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Decrease the volume in the app.",
+          ""
+        ],
+        "def" : "YTMusic:volumeDown()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:volumeDown()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "volumeDown",
+        "desc" : "Decrease the volume in the app."
+      },
+      {
+        "doc" : "Increase the volume in the app.\n\nParameters:\n* None\n\nReturns:\n* Nothing",
+        "parameters" : [
+          "* None",
+          ""
+        ],
+        "stripped_doc" : [
+          "Increase the volume in the app.",
+          ""
+        ],
+        "def" : "YTMusic:volumeUp()",
+        "notes" : [
+
+        ],
+        "signature" : "YTMusic:volumeUp()",
+        "type" : "Method",
+        "returns" : [
+          "* Nothing"
+        ],
+        "name" : "volumeUp",
+        "desc" : "Increase the volume in the app."
+      }
+    ],
+    "name" : "YTMusic"
+  }
+]
