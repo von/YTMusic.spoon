@@ -10,7 +10,7 @@ local YTMusic = {}
 
 -- Metadata
 YTMusic.name="YTMusic"
-YTMusic.version="0.1"
+YTMusic.version="0.2"
 YTMusic.author="Von Welch"
 -- https://opensource.org/licenses/Apache-2.0
 YTMusic.license="Apache-2.0"
@@ -87,27 +87,17 @@ end
 ---  * YTMusic object
 
 function YTMusic:bindHotKeys(table)
-  for feature,mapping in pairs(table) do
-    if feature == "next" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:nextTrack() end)
-    elseif feature == "play" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:playPause() end)
-    elseif feature == "previous" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:previousTrack() end)
-    elseif feature == "skipAhead" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:skipAhead() end)
-    elseif feature == "skipBack" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:skipBack() end)
-    elseif feature == "mute" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:toggleMute() end)
-    elseif feature == "volumeUp" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:volumeUp() end)
-    elseif feature == "volumeDown" then
-      hs.hotkey.bind(mapping[1], mapping[2], function() self:volumeDown() end)
-    else
-      self.log.wf("Unrecognized key binding feature '%s'", feature)
-    end
-  end
+  local spec = {
+    next = hs.fnutils.partial(self.next, self),
+    play = hs.fnutils.partial(self.play, self),
+    previous = hs.fnutils.partial(self.previousTrack, self),
+    skipAhead = hs.fnutils.partial(self.skipAhead, self),
+    skipBack = hs.fnutils.partial(self.skipBack, self),
+    mute = hs.fnutils.partial(self.toggleMute, self),
+    volumeUp = hs.fnutils.partial(self.volumeUp, self),
+    volumeDown = hs.fnutils.partial(self.volumeDown, self),
+  }
+  hs.spoons.bindHotkeysToSpec(spec, mapping)
   return self
 end
 
