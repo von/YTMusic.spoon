@@ -10,7 +10,7 @@ local YTMusic = {}
 
 -- Metadata
 YTMusic.name="YTMusic"
-YTMusic.version="0.2"
+YTMusic.version="0.3"
 YTMusic.author="Von Welch"
 -- https://opensource.org/licenses/Apache-2.0
 YTMusic.license="Apache-2.0"
@@ -115,6 +115,7 @@ function YTMusic:postEvent(event)
   if app then
     event:post(app)
   else
+    hs.alert("Application %s not found.", self.appName)
     self.log.wf("Application %s not found.", self.appName)
   end
 end
