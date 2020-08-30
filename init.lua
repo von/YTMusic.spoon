@@ -115,7 +115,7 @@ function YTMusic:postEvent(event)
   if app then
     event:post(app)
   else
-    hs.alert("Application %s not found.", self.appName)
+    hs.alert(string.format("Application %s not found.", self.appName))
     self.log.wf("Application %s not found.", self.appName)
   end
 end
