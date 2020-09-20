@@ -1,0 +1,79 @@
+[
+  {
+    "desc": "Works by sending key events to the app, so if the user interface changes,",
+    "name": "YTMusic",
+    "type": "Module"
+  },
+  {
+    "desc": "The method accepts a single parameter, which is a table. The keys of the table",
+    "module": "YTMusic",
+    "name": "bindHotKeys",
+    "type": "Function"
+  },
+  {
+    "desc": "Enable or disable debugging",
+    "module": "YTMusic",
+    "name": "debug",
+    "type": "Function"
+  },
+  {
+    "desc": "Initializes a YTMusic",
+    "module": "YTMusic",
+    "name": "init",
+    "type": "Function"
+  },
+  {
+    "desc": "Advance to next track.",
+    "module": "YTMusic",
+    "name": "nextTrack",
+    "type": "Function"
+  },
+  {
+    "desc": "Play or pause.",
+    "module": "YTMusic",
+    "name": "playPause",
+    "type": "Function"
+  },
+  {
+    "desc": "Post the event hs.eventtap.event to the YTMusic application.",
+    "module": "YTMusic",
+    "name": "postEvent",
+    "type": "Function"
+  },
+  {
+    "desc": "Rewind to begining of current track or previous track if already at begining of",
+    "module": "YTMusic",
+    "name": "previousTrack",
+    "type": "Function"
+  },
+  {
+    "desc": "Skip ahead 10 seconds.",
+    "module": "YTMusic",
+    "name": "skipAhead",
+    "type": "Function"
+  },
+  {
+    "desc": "Skip back 10 seconds.",
+    "module": "YTMusic",
+    "name": "skipBack",
+    "type": "Function"
+  },
+  {
+    "desc": "Toggle the mute state of the application.",
+    "module": "YTMusic",
+    "name": "toggleMute",
+    "type": "Function"
+  },
+  {
+    "desc": "Decrease the volume in the app.",
+    "module": "YTMusic",
+    "name": "volumeDown",
+    "type": "Function"
+  },
+  {
+    "desc": "Increase the volume in the app.",
+    "module": "YTMusic",
+    "name": "volumeUp",
+    "type": "Function"
+  }
+]
