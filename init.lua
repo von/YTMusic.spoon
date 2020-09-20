@@ -17,7 +17,7 @@ YTMusic.license="Apache-2.0"
 YTMusic.homepage="https://github.com/von/YTMusic.spoon"
 
 --- YTMusic:debug(enable)
---- Method
+--- Function
 --- Enable or disable debugging
 ---
 --- Parameters:
@@ -36,13 +36,8 @@ function YTMusic:debug(enable)
 end
 
 --- YTMusic:init()
---- Method
+--- Function
 --- Initializes a YTMusic
---- When a user calls hs.loadSpoon(), Hammerspoon will load and execute init.lua
---- from the relevant s.
---- Do generally not perform any work, map any hotkeys, start any timers/watchers/etc.
---- in the main scope of your init.lua. Instead, it should simply prepare an object
---- with methods to be used later, then return the object.
 ---
 --- Parameters:
 ---  * None
@@ -64,7 +59,7 @@ function YTMusic:init()
 end
 
 --- YTMusic:bindHotKeys(table)
---- Method
+--- Function
 --- The method accepts a single parameter, which is a table. The keys of the table
 --- are strings that describe the action performed, and the values of the table are
 --- tables containing modifiers and keynames/keycodes. E.g.
@@ -121,7 +116,7 @@ function YTMusic:postEvent(event)
 end
 
 --- YTMusic:playPause()
---- Method
+--- Function
 --- Play or pause.
 ---
 --- Parameters:
@@ -134,7 +129,7 @@ function YTMusic:playPause()
 end
 
 --- YTMusic:nextTrack()
---- Method
+--- Function
 --- Advance to next track.
 ---
 --- Parameters:
@@ -148,7 +143,7 @@ function YTMusic:nextTrack()
 end
 
 --- YTMusic:previousTrack()
---- Method
+--- Function
 --- Rewind to begining of current track or previous track if already at begining of
 --- current track.
 ---
@@ -163,7 +158,7 @@ function YTMusic:previousTrack()
 end
 
 --- YTMusic:skipAhead()
---- Method
+--- Function
 --- Skip ahead 10 seconds.
 ---
 --- Parameters:
@@ -176,7 +171,7 @@ function YTMusic:skipAhead()
 end
 
 --- YTMusic:skipBack()
---- Method
+--- Function
 --- Skip back 10 seconds.
 ---
 --- Parameters:
@@ -189,7 +184,7 @@ function YTMusic:skipBack()
 end
 
 --- YTMusic:toggleMute()
---- Method
+--- Function
 --- Toggle the mute state of the application.
 ---
 --- Parameters:
@@ -202,7 +197,7 @@ function YTMusic:toggleMute()
 end
 
 --- YTMusic:volumeDown()
---- Method
+--- Function
 --- Decrease the volume in the app.
 ---
 --- Parameters:
@@ -215,7 +210,7 @@ function YTMusic:volumeDown()
 end
 
 --- YTMusic:volumeUp()
---- Method
+--- Function
 --- Increase the volume in the app.
 ---
 --- Parameters:
