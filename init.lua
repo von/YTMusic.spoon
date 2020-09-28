@@ -108,6 +108,7 @@ end
 function YTMusic:postEvent(event)
   local app = hs.application.get(self.appName)
   if app then
+    self.log.df("Posting event: %s", hs.inspect(event))
     event:post(app)
   else
     hs.alert(string.format("Application %s not found.", self.appName))
